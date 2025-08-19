@@ -16,7 +16,7 @@ const app = express();
 // Enable CORS for all origins (adjust if you want to restrict)
 // app.use(cors());
 app.use(cors({
-  origin: 'http://superlab.atriowings.in',
+  origin: 'https://superlab.atriowings.in',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
@@ -55,3 +55,4 @@ app.use((err, req, res, next) => {
 // Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+
